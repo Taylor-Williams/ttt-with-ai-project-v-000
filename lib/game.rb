@@ -20,7 +20,7 @@ class Game
   end
 
   def current_player
-    @board.odd? ? @player_1 : @player_2
+    @board.turn_count.even? ? @player_1 : @player_2
   end
 
   def won?
