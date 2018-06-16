@@ -6,7 +6,7 @@ class PlayerMaker
   end
 
   def self.get_token(player_number)
-    player_number % 2 == 0 ? "O" : "X"
+    player_number.even? ? "O" : "X"
   end
 
   def self.get_player_type(player_type, player_token)
